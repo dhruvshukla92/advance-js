@@ -1,0 +1,17 @@
+.country{
+	border: 1px solid grey;
+    width: 200px;
+    box-sizing: border-box;
+	border-radius: 13px;
+	margin: 20px;
+}
+.country-flag{
+    width: 100%;
+    height: auto;
+    border-radius: 13px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.country h2, .country p {
+	padding-left: 5px;
+}

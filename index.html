@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src='./dom.js' defer></script>
+	<link rel="stylesheet" href='./index.css' />
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="#" class='home'>Home</a>
+			<a href="#" class='about'>About</a>
+			<a href="#" class='contact'>Contact</a>
+		</nav>
+	</header>
+	<main>
+		
+		<h1>Advance Js</h1>
+		<br /><br />
+		<div id="countries">
+
+		</div>
+		<br /><br />
+		<h1 class="heading">Heading 1</h1>
+		<input type="text" id="textbox" oninput="printWithDebounce(this)" />
+		<p id='demo'> this is demo element</p>
+		<p id="test">this iis test element</p>
+		<h3 class="heading">heading 3</h3>
+		<button class='btn-demo'>Change Demo</button> <br /> <br />
+		<h3>New heading 3</h3>
+		<button class='btn-test'>Test button</button>
+		
+	</main>
+	<script>
+		var timer;
+		function printWithDebounce(e) {
+			console.log('function called', e.value)
+			var val = e.value;
+			clearTimeout(timer)
+			timer = setTimeout(() => {
+				console.log('the value is: ', val);
+			}, 700);
+
+		}
+	</script>
+</body>
+
+</html>
